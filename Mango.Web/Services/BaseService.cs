@@ -9,7 +9,7 @@ namespace Mango.Web.Services
 {
     public class BaseService : IBaseService
     {
-        public ResponseDto responseModel { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public ResponseDto responseModel { get; set; }
         public IHttpClientFactory httpClient { get; set; }
 
         public BaseService(IHttpClientFactory httpClient)
